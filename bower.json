@@ -1,0 +1,28 @@
+{
+  "name": "spa-dojo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/hmeenia/spa-dojo",
+  "authors": [
+    "Meenia",
+    "Himanshu <hmeenia@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dojo": "http://download.dojotoolkit.org/release-1.9.3/dojo-release-1.9.3.tar.gz"
+  }
+}
