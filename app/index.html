@@ -1,13 +1,39 @@
 <html>
 	<head>
+		<link rel="stylesheet" href="libs/dojo/dijit/themes/claro/claro.css" />
 	</head>
-	<body>
-		<script src="../bower_components/dojo/dojo/dojo.js" data-dojo-config="async: true">
+	<body class="claro">
+
+		<script>
+		//declaring the dojo config object. Setting the base path for whole app. so /app will be the base path
+
+		var dojoConfig = {
+            baseUrl: './',
+            async: 1,
+            tlmSiblingOfDojo: false,
+            isDebug: 1,
+            parseOnLoad: true,
+            packages:[{
+                name:"dojo",
+                location:"./libs/dojo/dojo"
+            },{
+                name:"dijit",
+                location:"./libs/dojo/dijit"
+            }],
+        };
+
+		</script>
+
+		<script src="./libs/dojo/dojo/dojo.js">
 		</script>
 	    <h1 id="greeting">Hello</h1>		
 		<script>
-        require(["base/app.js"], function (app) {
+
+        require(["base/app.js",
+        	"dojo/parser"
+        	], function (app) {
         	console.log(app);
+        	app.initialize();
         });
     	</script>
 
