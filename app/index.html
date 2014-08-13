@@ -2,6 +2,14 @@
 	<head>
 	</head>
 	<body>
-		<p> Hello World </p>
+		<script src="../bower_components/dojo/dojo/dojo.js" data-dojo-config="async: true">
+		</script>
+	    <h1 id="greeting">Hello</h1>		
+		<script>
+        require(["base/app.js"], function (app) {
+        	console.log(app);
+        });
+    	</script>
+
 	</body>
 </html>
