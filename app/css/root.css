@@ -1,0 +1,40 @@
+.inlineBlock {
+	display: inline-block;
+}
+
+input[type='text'] {
+	border: 1px solid #BEB5B5;
+	-webkit-box-shadow: inset 1px 1px 4px #ddd;
+	-moz-box-shadow: inset 1px 1px 4px #ddd;
+	box-shadow: inset 1px 1px 4px #ddd;
+	font-size: 15px;
+	height: 26px;
+	padding: 0 5px;
+}
+
+.fieldTitle {
+	font-weight: bold;
+	color: #000;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.button {
+	height: 21px;
+	border: 1px solid #999;
+	width: 60px;
+	color: #666 !important;
+	text-align: center;
+	padding-top: 4px;
+	border-radius: 3px;
+	background-color: rgb(206, 206, 206);
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.topAlign {
+	vertical-align: top;
+}

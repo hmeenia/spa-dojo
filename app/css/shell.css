@@ -1,0 +1,70 @@
+.header {
+	height: 60px;
+	box-shadow: 0 1px 4px #ccc;
+	z-index: 200;
+	background: #F4F4F4;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.forgotPassword {
+	vertical-align: middle;
+	zoom: 1;
+	margin-left: 12px;
+	font-size: 11px;
+	margin-top: -4px;
+	text-decoration: none;
+}
+
+.loginField {
+	float: right;
+	margin-right: 40px;
+}
+
+.websiteTitle {
+	margin-top: 10px;
+	margin-left: 100px;
+}
+
+
+.tagLine {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.homePageImagesDiv {
+	margin-left: 200px;
+	width: 500px;
+}
+
+.homePageImage {
+	height: 150px;
+	width: 150px;
+}
+
+.homePage_rightDiv {
+
+}
+
+.signupTextField {
+	margin-bottom: 20px;
+	width: 225px;
+}
+
+.signup {
+	vertical-align: top;
+	margin-left: 100px;	
+}
+
+.signupButton {
+	height: 50px;
+	border: 1px solid #fff234;
+	width: 250px;
+	background-color: #A7B5BB;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 1.2em;
+	color: darkolivegreen;
+	border-radius: 13px;
+	cursor: pointer;
+	margin-top: 20px;
+}

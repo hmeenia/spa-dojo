@@ -3,8 +3,8 @@ define([
     "dijit/_WidgetBase",
     "dijit/_TemplatedMixin",
     "dojo/text!./templates/shellView.html",
-    "dijit/layout/AccordionContainer",
-    "dijit/layout/ContentPane"
+    "dijit/form/Form",
+    "dijit/form/ValidationTextBox"
 
 ], function(declare,WidgetBase, TemplatedMixin, template) {
 
@@ -19,6 +19,17 @@ define([
 
         postCreate: function () {
             this.inherited(arguments);
+        },
+
+        showSignUpForm: function () {
+            this.signupDiv.classList.add("hide");
+            document.getElementById("_signupInitialForm").classList.remove("hide");
+        },
+
+        signup: function () {
+            if(document.getElementById("_signupInitialForm").validate()){
+                console.log("form Valid");
+            }
         }
 
     });

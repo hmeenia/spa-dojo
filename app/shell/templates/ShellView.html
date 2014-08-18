@@ -1,10 +1,60 @@
 <div>
-	<div data-dojo-type="dijit/layout/AccordionContainer" data-dojo-attach-point="reportOptionsAccordion" data-dojo-props="doLayout: false, class: 'accordionContainer'">
-		<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title: 'Columns options'">
-		  <span>Columns options will be displayed here</span>
+	<div class="header">
+		<h1 class="websiteTitle inlineBlock">
+			Start Me Up!
+		</h1>
+		<div class="loginField inlineBlock">
+			<div class="loginFieldDiv inlineBlock" >
+				<label class="fieldTitle">Email Address</label>
+				<br/>
+				<input type="text" />
+			</div>
+			<div class="loginFieldDiv inlineBlock">
+				<label class="fieldTitle">Password</label>
+				<a class="forgotPassword" href="javascript:void(0)">Forgot your password?</a>
+				<br/>
+				<input type="text" />
+			</div>
+			<div class="button inlineBlock">
+				Sign In
+			</div>  
 		</div>
-		<div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="title: 'List Options'">
-		  <a>Show MultiSelectComboBox</a>
+	</div>
+
+	<div class="content">
+		<h2 class="tagLine">
+			Join the world's largest professional network.
+		</h2>
+		<div class="homePageImagesDiv inlineBlock">
+			<img class="homePageImage" src="img/1.png"></img>
+			<img class="homePageImage" src="img/2.png"></img>
+			<img class="homePageImage" src="img/3.png"></img>
+			<img class="homePageImage" src="img/4.png"></img>
+			<img class="homePageImage" src="img/5.png"></img>
+			<img class="homePageImage" src="img/6.png"></img>
+		</div>
+		<div class="homePage_rightDiv topAlign inlineBlock">
+			<div class="signup inlineBlock" data-dojo-attach-point="signupDiv">
+				<h3> Join Us - It's free </h3>
+				<div class="signUpButton" data-dojo-attach-event="onclick: showSignUpForm">
+					Sign up as investor
+				</div>
+				<div class="signUpButton" data-dojo-attach-event="onclick: showSignUpForm">
+					Sign up as entrepreneur
+				</div>
+			</div>
+
+			<div data-dojo-type="dijit/form/Form" class="hide signUpFields" id="_signupInitialForm">
+				<h3>Quick Sign Up</h3>
+				<br>
+				<input type="text" class="companyName signupTextField" required placeholder="Company Name" />
+				<br>
+				<input type="text" data-dojo-type="dijit/form/ValidationTextBox" class="signupTextField" placeholder="Username" data-dojo-props="required: true"/>
+				<br>
+				<input type="text" data-dojo-type="dijit/form/ValidationTextBox" class="signupTextField" placeholder="Password" data-dojo-props="
+				regEx: '^(?=.*\d).{4,8}$', required: true, invalidMessage: 'Invalid Password'" />
+				<div class="button" data-dojo-attach-event="onclick: signup">Sign Up</div>
+			</div>
 		</div>
 	</div>
 </div>

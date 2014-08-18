@@ -1,8 +1,6 @@
 define([
-    "dojo/_base/declare",
-    'dojo/dom',
-    'dojo/dom-construct'
-], function (declare, dom, domConstruct) {
+    "dojo/_base/declare"
+], function (declare) {
 
 var app = declare(null, {
 
@@ -14,9 +12,6 @@ var app = declare(null, {
 
     initialize: function () {
         console.log("In startup");
-        var greetingNode = dom.byId('greeting');
-        domConstruct.place('<i> Dojo!</i>', greetingNode);
-
         require(["shell/ShellViewController.js"], function(Controller) {
             controllerVC = new Controller();
             this.documentBody.appendChild(controllerVC.domNode);
